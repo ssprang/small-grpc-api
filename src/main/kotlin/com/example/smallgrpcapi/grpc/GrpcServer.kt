@@ -1,5 +1,6 @@
 package com.example.smallgrpcapi.grpc
 
+import com.example.smallgrpcapi.grpc.logging.RequestIdServerInterceptor
 import com.example.smallgrpcapi.grpc.service.PersonService
 import io.grpc.Server
 import io.grpc.ServerBuilder
@@ -55,6 +56,8 @@ class GrpcServer(
         .addService(ProtoReflectionService.newInstance())
         // The grpc api
         .addService(personService)
+        // For attaching requestId to logs
+        .intercept(RequestIdServerInterceptor())
         .build()
 
     fun start() {
