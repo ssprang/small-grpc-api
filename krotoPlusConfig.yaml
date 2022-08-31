@@ -1,0 +1,8 @@
+protoBuilders:
+  - filter:
+      excludePath:
+        - google/*
+    useDslMarkers: false # this can be enabled once https://github.com/marcoferrer/kroto-plus/issues/28 is fixed
+
+grpcStubExts:
+  - supportCoroutines: false
