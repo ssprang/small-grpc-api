@@ -192,7 +192,7 @@
                             <groupId>io.grpc</groupId>
                             <artifactId>protoc-gen-grpc-kotlin</artifactId>
                             <version>${grpc.kotlin.version}</version>
-                            <classifier>jdk7</classifier>
+                            <classifier>jdk8</classifier>
                             <mainClass>io.grpc.kotlin.generator.GeneratorRunner</mainClass>
                         </protocPlugin>
                     </protocPlugins>
