@@ -1,6 +1,6 @@
 package com.example.smallgrpcapi.grpc.logging
 
-import com.example.smallgrpcapi.grpc.logging.Constants.Constants.REQUEST_ID_METADATA_KEY
+import com.example.smallgrpcapi.grpc.logging.Constants.REQUEST_ID_METADATA_KEY
 import io.grpc.Metadata
 import io.grpc.ServerCall
 import io.grpc.kotlin.CoroutineContextServerInterceptor
